@@ -1,0 +1,23 @@
+.column {
+}
+
+.column img {
+  width: 40px;
+  height: 40px;
+}
+
+.column__title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.column__list {
+  margin-top: 20px;
+  font-size: 14px;
+  display: grid;
+  gap: 10px;
+}
+
+.column__item {
+  font-size: 14px; 
+}
