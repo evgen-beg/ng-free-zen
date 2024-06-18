@@ -12,17 +12,15 @@ h3,
 h4, 
 h5, 
 h6 {
+  line-height: inherit;
   font-size: inherit;
-  font-weight: 400;
+  color: inherit;
+  text-align: inherit;
 }
 
 ul, 
 ol {
   list-style: none;
-}
-
-img {
-  width: 100%;
 }
 
 a {
@@ -37,14 +35,10 @@ button {
   border: none;
 }
 
+input,
 select {
   appearance: none;
-  border: none;
-  background: none;
-}
-
-input {
-  appearance: none;
   background: none;
   border: none;
+  outline: none;
 }
