@@ -1,0 +1,35 @@
+.care {
+  padding: 30px 15px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-size-big;
+  }
+
+  &__title {
+    font-size: 26px;
+    font-weight: 700;
+  }
+
+  &__copy {
+    margin-top: 10px;
+
+    &:first-of-type {
+      margin-top: 20px;
+    }
+  }
+
+  &__image-block {
+    height: 72vw;
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    overflow: hidden;
+
+    img {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

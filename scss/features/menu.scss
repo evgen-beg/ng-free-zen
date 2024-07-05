@@ -1,0 +1,18 @@
+.menu {
+  display: none;
+  background-color: #FFF;
+
+  &.active {
+    display: block;
+    position: fixed;  
+    top: 51px;
+    left: 0;
+    right: 0;
+  }
+
+  &__item {
+    padding: 24px 15px;
+    font-size: 24px;
+    border-bottom: 1px solid #AAA;
+  }
+}

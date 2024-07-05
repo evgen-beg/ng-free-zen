@@ -1,0 +1,44 @@
+.footer {
+  padding: 30px 15px;
+  color: #FFF;
+  background: #484848;
+
+  &__wrapper {
+    display: grid;
+    gap: $gap-size-big;
+  }
+
+  &__columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $gap-size-big;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__logo {
+    width: 216px;
+    height: 23px;
+  }
+
+  &__copy {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 10px;
+  }
+
+  &__dev {
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 130px;
+      height: 46px;
+      margin-top: 10px;
+    }
+  }
+}
