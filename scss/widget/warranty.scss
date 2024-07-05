@@ -1,36 +1,36 @@
 .warranty {
   padding: 30px 15px;
-}
 
-.warranty__wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-size-big;
+  }
 
-.warranty__title {
-  font-size: 26px;
-  font-weight: 700;
-}
+  &__title {
+    font-size: 26px;
+    font-weight: 700;
+  }
 
-.warranty__copy:first-of-type {
-  margin-top: 20px;
-}
+  &__copy:first-of-type {
+    margin-top: 20px;
+  }
 
-.warranty__copy {
-  margin-top: 10px;
-  font-size: 14px;
-}
+  &__copy {
+    margin-top: 10px;
+    font-size: 14px;
+  }
 
-.warranty__image-block {
-  height: 72vw;
-  border: 1px solid #aaa;
-  border-radius: 20px;
-  overflow: hidden;
-}
+  &__image-block {
+    height: 72vw;
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    overflow: hidden;
 
-.warranty__image-block img {
-  display: block;
-  height: 100%;
-  object-fit: cover;
+    img {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 }

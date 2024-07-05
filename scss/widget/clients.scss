@@ -1,16 +1,16 @@
 .clients {
   padding: 30px 15px;
-}
 
-.clients__wrapper {
-  display: grid;
-  gap: 30px;
-}
+  &__wrapper {
+    display: grid;
+    gap: $gap-size-big;
+  }
 
-.clients__brands {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(2, 1fr);
-}
+  &__brands {
+    display: grid;
+    gap: $gap-size-big;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-/* .clients__brand {} */
+  /* &__brand {} */
+}
