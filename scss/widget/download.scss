@@ -1,5 +1,6 @@
 .download {
   padding: 30px 15px;
+  color: var(--color-primary);
 
   &__wrapper {
     display: flex;
@@ -7,11 +8,10 @@
     gap: $gap-size-big;
   }
 
-  /* &__text-block {} */
-
   &__title {
     font-size: 30px;
     font-weight: 700;
+    color: var(--color-primary);
   }
 
   &__copy {
@@ -35,9 +35,10 @@
 
   &__imege-block {
     height: 70vw;
-    border: 1px solid #AAA;
-    border-radius: 20px;
+    border: 1px solid var(--border-color-primary);
+    border-radius: $border-radius-primary;
     overflow: hidden;
+    
 
     img {
       display: block;

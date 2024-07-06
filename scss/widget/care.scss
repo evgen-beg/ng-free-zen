@@ -1,6 +1,7 @@
 .care {
   padding: 30px 15px;
-
+  color: var(--color-primary);
+  
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -22,8 +23,8 @@
 
   &__image-block {
     height: 72vw;
-    border: 1px solid #aaa;
-    border-radius: 20px;
+    border: 1px solid var(--border-color-primary);
+    border-radius: $border-radius-primary;
     overflow: hidden;
 
     img {

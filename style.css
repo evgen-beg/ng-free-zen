@@ -1,3 +1,23 @@
+.app {
+  --border-color-secondary: #000;
+  --border-color-checkbox-on:#00A1FF;
+  --border-color-checkbox-off:#CCC;
+  --bg-primary: #FFF;
+  --bg-footer: #484848;
+  --bg-checkbox-on: #00A1FF;
+  --bg-checkbox-off: #EEE;
+}
+.app.light {
+  --color-primary: #000;
+  --border-color-primary: #AAA;
+  --bg-color-primary: #FFF;
+}
+.app.dark {
+  --color-primary: #FFF;
+  --border-color-primary: #FFF;
+  --bg-color-primary: #484848;
+}
+
 *,
 *::before,
 *::after {
@@ -76,9 +96,13 @@ img {
   width: 100%;
 }
 
+.app {
+  background: var(--bg-color-primary);
+}
+
 .menu {
   display: none;
-  background-color: #FFF;
+  background: var(--bg-color-primary);
 }
 .menu.active {
   display: block;
@@ -90,7 +114,8 @@ img {
 .menu__item {
   padding: 24px 15px;
   font-size: 24px;
-  border-bottom: 1px solid #AAA;
+  border-bottom: 1px solid var(--border-color-primary);
+  color: var(--color-primary);
 }
 
 .burger {
@@ -111,15 +136,18 @@ img {
 }
 .burger::before {
   top: 0;
+  background: var(--color-primary);
 }
 .burger::after {
   bottom: 0;
+  background: var(--color-primary);
 }
 .burger span {
   display: block;
   width: 100%;
   height: 2px;
   background: #000;
+  background: var(--color-primary);
   border-radius: 10px;
 }
 .burger.active::before {
@@ -157,8 +185,8 @@ img {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #FFF;
-  border-bottom: 1px solid #AAA;
+  background: var(--bg-color-primary);
+  border-bottom: 1px solid var(--border-color-primary);
 }
 .header__wrapper {
   height: 50px;
@@ -169,9 +197,11 @@ img {
 .header__logo {
   width: 77px;
   height: 30px;
+  color: var(--color-primary);
 }
 .header__logo img {
   height: 100%;
+  fill: currentColor;
 }
 .header__actions {
   margin-left: auto;
@@ -185,9 +215,10 @@ img {
   align-items: center;
   width: 50px;
   height: 30px;
-  border: 1px solid #000;
+  border: 1px solid var(--color-primary);
   border-radius: 4px;
   overflow: hidden;
+  color: var(--color-primary);
 }
 .header__lang img {
   position: absolute;
@@ -197,11 +228,15 @@ img {
   transform: translateY(-50%);
   width: 9px;
   height: 6px;
+  fill: currentColor;
 }
 .header__lang select {
   padding-left: 8px;
   width: 100%;
   height: 100%;
+  color: var(--color-primary);
+  background-color: var(--bg-color-primary);
+  border-bottom: 1px solid var(--border-color-primary);
 }
 .header__theme {
   width: 26px;
@@ -210,7 +245,7 @@ img {
 
 .download {
   padding: 30px 15px;
-  /* &__text-block {} */
+  color: var(--color-primary);
 }
 .download__wrapper {
   display: flex;
@@ -220,6 +255,7 @@ img {
 .download__title {
   font-size: 30px;
   font-weight: 700;
+  color: var(--color-primary);
 }
 .download__copy {
   margin-top: 10px;
@@ -239,7 +275,7 @@ img {
 }
 .download__imege-block {
   height: 70vw;
-  border: 1px solid #AAA;
+  border: 1px solid var(--border-color-primary);
   border-radius: 20px;
   overflow: hidden;
 }
@@ -251,8 +287,8 @@ img {
 
 .footer {
   padding: 30px 15px;
-  color: #FFF;
-  background: #484848;
+  color: var(--color-primary);
+  background: var(--bg-footer);
 }
 .footer__wrapper {
   display: grid;
@@ -289,6 +325,7 @@ img {
 
 .warranty {
   padding: 30px 15px;
+  color: var(--color-primary);
 }
 .warranty__wrapper {
   display: flex;
@@ -320,6 +357,7 @@ img {
 
 .care {
   padding: 30px 15px;
+  color: var(--color-primary);
 }
 .care__wrapper {
   display: flex;
@@ -338,7 +376,7 @@ img {
 }
 .care__image-block {
   height: 72vw;
-  border: 1px solid #aaa;
+  border: 1px solid var(--border-color-primary);
   border-radius: 20px;
   overflow: hidden;
 }
@@ -350,6 +388,7 @@ img {
 
 .cashback {
   padding: 30px 15px;
+  color: var(--color-primary);
 }
 .cashback__title {
   font-size: 26px;
@@ -376,7 +415,6 @@ img {
 
 .clients {
   padding: 30px 15px;
-  /* &__brand {} */
 }
 .clients__wrapper {
   display: grid;
@@ -386,6 +424,10 @@ img {
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(2, 1fr);
+  color: var(--color-primary);
+}
+.clients__brands img {
+  fill: currentColor;
 }
 
 .modal {
@@ -410,6 +452,12 @@ img {
   gap: 20px;
   background: #fff;
   border-radius: 5px;
+}
+@media (min-width: 768px) {
+  .modal__body {
+    width: 290px;
+    transition: all 1s;
+  }
 }
 .modal__close {
   position: absolute;
@@ -474,16 +522,16 @@ img {
   -moz-appearance: none;
   width: 20px;
   height: 20px;
-  background-color: #EEE;
-  border: 1px solid #CCC;
+  background-color: var(--bg-checkbox-off);
+  border: 1px solid var(--border-color-checkbox-off);
   border-radius: 4px;
   margin-right: 10px;
   position: relative;
   cursor: pointer;
 }
 .form__checkbox input[type=checkbox]:checked {
-  background-color: #00A1FF;
-  border-color: #00A1FF;
+  background-color: var(--bg-checkbox-on);
+  border-color: var(--border-color-checkbox-on);
 }
 .form__checkbox input[type=checkbox]:checked::before {
   content: "";
@@ -492,7 +540,7 @@ img {
   left: 50%;
   width: 16px;
   height: 16px;
-  background-image: url("/assets/icons/check.svg");
+  background-image: url("assets/icons/check.svg");
   background-size: contain;
   background-repeat: no-repeat;
   transform: translate(-50%, -50%);

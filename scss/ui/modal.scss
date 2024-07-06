@@ -21,6 +21,11 @@
     gap: $gap-size-average;
     background: #fff;
     border-radius: 5px;
+
+    @media (min-width: $viewport-md) {
+      width: 290px;
+      transition: all 1s;
+    }
   }
 
   &__close {

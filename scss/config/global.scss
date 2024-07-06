@@ -12,3 +12,11 @@ input {
 img {
   width: 100%;
 }
+
+.app {
+  background: var(--bg-color-primary);
+}
+
+.warranty, .care, .cashback, .clients, .modal {
+  // display: none;
+}

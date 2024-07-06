@@ -1,0 +1,31 @@
+
+.app {
+    // Border-color:
+    --border-color-secondary: #000;
+    --border-color-checkbox-on:#00A1FF;
+    --border-color-checkbox-off:#CCC;
+  
+    // Background-color:
+    --bg-primary: #FFF;
+    --bg-footer: #484848;
+    --bg-checkbox-on: #00A1FF;
+    --bg-checkbox-off: #EEE;
+
+  &.light {
+    // color:
+    --color-primary: #000;
+    // border-color:
+    --border-color-primary: #AAA; 
+    // bg-color:
+    --bg-color-primary: #FFF;
+  }
+
+  &.dark {
+    // color:
+    --color-primary: #FFF;
+    // border-color: 
+    --border-color-primary: #FFF;
+    // bg-color:
+    --bg-color-primary: #484848;
+  }
+}

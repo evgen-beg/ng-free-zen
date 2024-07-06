@@ -1,6 +1,6 @@
 .clients {
   padding: 30px 15px;
-
+    
   &__wrapper {
     display: grid;
     gap: $gap-size-big;
@@ -10,7 +10,10 @@
     display: grid;
     gap: $gap-size-big;
     grid-template-columns: repeat(2, 1fr);
-  }
+    color: var(--color-primary);
 
-  /* &__brand {} */
+    img {
+      fill: currentColor;
+    }
+  }
 }

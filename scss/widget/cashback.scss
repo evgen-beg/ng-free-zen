@@ -1,9 +1,11 @@
 .cashback {
   padding: 30px 15px;
-
+  color: var(--color-primary);
+  
   &__title {
     font-size: 26px;
     font-weight: 700;
+    
   }
 
   &__copy {
