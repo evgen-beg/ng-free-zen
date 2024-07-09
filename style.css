@@ -87,19 +87,15 @@ body {
   font-style: 14px;
   font-weight: 400;
 }
-
-input {
-  font-size: 16px;
-}
-
-img {
-  width: 100%;
-}
-
-.app {
+body .app {
   background: var(--bg-color-primary);
 }
-
+body .app input {
+  font-size: 16px;
+}
+body .app img {
+  width: 100%;
+}
 .menu {
   display: none;
   background: var(--bg-color-primary);
@@ -199,7 +195,7 @@ img {
   height: 30px;
   color: var(--color-primary);
 }
-.header__logo img {
+.header__logo svg {
   height: 100%;
   fill: currentColor;
 }
