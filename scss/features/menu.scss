@@ -1,6 +1,6 @@
 .menu {
   display: none;
-  background-color: #FFF;
+  background: var(--bg-color-primary);
 
   &.active {
     display: block;
@@ -13,6 +13,7 @@
   &__item {
     padding: 24px 15px;
     font-size: 24px;
-    border-bottom: 1px solid #AAA;
+    border-bottom: 1px solid var(--border-color-primary);
+    color: var(--color-primary)
   }
 }

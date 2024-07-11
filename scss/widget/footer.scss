@@ -1,7 +1,7 @@
 .footer {
   padding: 30px 15px;
-  color: #FFF;
-  background: #484848;
+  color: var(--color-primary);
+  background: var(--bg-footer);
 
   &__wrapper {
     display: grid;

@@ -46,16 +46,16 @@
       -moz-appearance: none;
       width: 20px;
       height: 20px;
-      background-color: #EEE;
-      border: 1px solid #CCC;
-      border-radius: 4px;
+      background-color: var(--bg-checkbox-off);
+      border: 1px solid var(--border-color-checkbox-off);
+      border-radius: $border-radius-secondary;
       margin-right: 10px;
       position: relative;
       cursor: pointer;
 
       &:checked {
-        background-color: #00A1FF;
-        border-color: #00A1FF;
+        background-color: var(--bg-checkbox-on);
+        border-color: var(--border-color-checkbox-on);
 
         &::before {
           content: '';
@@ -64,7 +64,7 @@
           left: 50%;
           width: 16px;
           height: 16px;
-          background-image: url('/assets/icons/check.svg');
+          background-image: url('assets/icons/check.svg');
           background-size: contain;
           background-repeat: no-repeat;
           transform: translate(-50%, -50%);

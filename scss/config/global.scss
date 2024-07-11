@@ -3,12 +3,20 @@ body {
   font-family: 'Nunito', sans-serif;
   font-style: 14px;
   font-weight: 400;
-}
 
-input {
-  font-size: 16px;
-}
+  .app {
+    background: var(--bg-color-primary);
 
-img {
-  width: 100%;
+    input {
+      font-size: 16px;
+    }
+    
+    img {
+      width: 100%;
+    }
+
+    .warranty, .care, .cashback, .clients, .modal {
+      // display: none;
+    }
+  }
 }
