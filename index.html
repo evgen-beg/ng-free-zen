@@ -285,7 +285,7 @@
       </footer>    
       <!-- Модальное окно -->
       <!-- modal active -->
-      <div class="modal" id="modal">
+      <div class="modal active" id="modal">
         <div class="modal__body">
           <!-- Close button  -->
           <button class="modal__close" id="close">
@@ -318,10 +318,10 @@
               </select>
             </label>
             <!-- Privacy policy -->
-            <label class="form__checkbox">
-              <input type="checkbox" id="policy">
-              <a href="https://example.com" target="_blank">Privacy policy</a>
-            </label>
+            <div class="form__policy">
+                <input type="checkbox" id="policy">
+                <a href="https://example.com" target="_blank">Privacy policy</a>
+            </div>
             <!-- Submit -->
             <button class="form__submit" type="submit">Submit</button>
           </form>
